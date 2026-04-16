@@ -236,7 +236,7 @@ ul, ol {
 
 /* Real logo image in nav */
 .nav-logo-img {
-  height: 44px;
+  height: 56px;
   width: auto;
   display: block;
 }
@@ -747,6 +747,11 @@ ul, ol {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* Ensure hidden attribute is respected even when display is set */
+[hidden] {
+  display: none !important;
 }
 
 /* Success card */
