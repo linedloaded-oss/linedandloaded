@@ -278,7 +278,7 @@
       // Replace YOUR_WEBHOOK_URL_HERE with your actual endpoint,
       // e.g. a Zapier Webhook, Make (Integromat) webhook, or Formspree URL.
       // ----------------------------------------------------------------
-      const WEBHOOK_URL = 'YOUR_WEBHOOK_URL_HERE';
+      const WEBHOOK_URL = 'https://sweet-luck-production-2bcd.up.railway.app/api/webhook/lead';
 
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',
