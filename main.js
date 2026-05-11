@@ -260,14 +260,20 @@
       return;
     }
 
-    // Gather form data
+    // Gather form data. The SMS opt-in checkbox is optional — we only set
+    // sms_opt_in to true if the user explicitly checked the box. The CRM
+    // webhook only sends the confirmation SMS when this is true, so we are
+    // not implicitly opting people in via form submission.
+    const optInEl = document.getElementById('field-optin');
     const payload = {
-      name:    document.getElementById('field-name').value.trim(),
-      phone:   document.getElementById('field-phone').value.trim(),
-      email:   document.getElementById('field-email').value.trim(),
-      address: document.getElementById('field-address').value.trim(),
-      spots:   document.getElementById('field-spots').value.trim() || null,
-      message: document.getElementById('field-message').value.trim() || null,
+      name:       document.getElementById('field-name').value.trim(),
+      phone:      document.getElementById('field-phone').value.trim(),
+      email:      document.getElementById('field-email').value.trim(),
+      address:    document.getElementById('field-address').value.trim(),
+      spots:      document.getElementById('field-spots').value.trim() || null,
+      message:    document.getElementById('field-message').value.trim() || null,
+      sms_opt_in: !!(optInEl && optInEl.checked),
+      source:     window.location.pathname.includes('quote') ? 'quote-page' : 'home-page',
     };
 
     setLoading(true);
