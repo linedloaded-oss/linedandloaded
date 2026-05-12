@@ -53,7 +53,7 @@
   --transition: 0.2s ease;
 
   /* Nav height */
-  --nav-height: 260px;
+  --nav-height: 100px;
 }
 
 /* ------------------------------------------------------------
@@ -236,7 +236,7 @@ ul, ol {
 
 /* Real logo image in nav */
 .nav-logo-img {
-  height: 240px;
+  height: 70px;
   width: auto;
   display: block;
 }
