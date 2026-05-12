@@ -239,6 +239,7 @@ ul, ol {
   height: 160px;
   width: auto;
   display: block;
+  filter: contrast(1.2) brightness(1.05);
 }
 
 /* Real logo image in footer */
@@ -246,6 +247,7 @@ ul, ol {
   height: 52px;
   width: auto;
   display: block;
+  filter: contrast(1.2) brightness(1.05);
 }
 
 .logo-mark {
