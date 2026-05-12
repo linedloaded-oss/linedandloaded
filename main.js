@@ -294,18 +294,13 @@
         body: JSON.stringify(payload),
       });
 
-      console.log('Response status:', response.status);
-      console.log('Response ok:', response.ok);
-
       if (!response.ok) {
         throw new Error('Server returned ' + response.status);
       }
 
-      const data = await response.json();
-      console.log('Response data:', data);
+      await response.json();
 
       // SUCCESS: redirect to thank-you page for GA conversion tracking
-      console.log('Redirecting to thank-you page...');
       window.location.href = '/thank-you.html';
 
     } catch (err) {
