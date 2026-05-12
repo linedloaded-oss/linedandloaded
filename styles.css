@@ -239,7 +239,6 @@ ul, ol {
   height: 160px;
   width: auto;
   display: block;
-  mix-blend-mode: screen; /* Makes black background transparent, logo blends into dark nav */
 }
 
 /* Real logo image in footer */
