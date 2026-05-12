@@ -9,7 +9,7 @@
 ------------------------------------------------------------ */
 :root {
   /* Colors — matched to Lined & Loaded logo */
-  --color-primary:    #D4A017; /* Warm gold from logo */
+  --color-primary:    #8FD14F; /* Bright green from logo */
   --color-secondary:  #0A0A0A; /* Deep black from logo background */
   --color-bg:         #0A0A0A; /* Dark background matching logo */
   --color-bg-section: #111111; /* Slightly lighter dark for alternating sections */
@@ -47,7 +47,7 @@
   /* Shadows */
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
   --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.14);
-  --shadow-btn-hover: 0 4px 16px rgba(212, 160, 23, 0.45);
+  --shadow-btn-hover: 0 4px 16px rgba(143, 209, 79, 0.45);
 
   /* Transitions */
   --transition: 0.2s ease;
@@ -705,7 +705,7 @@ ul, ol {
 .form-input:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.25);
+  box-shadow: 0 0 0 3px rgba(143, 209, 79, 0.25);
 }
 
 /* Invalid / error state */
@@ -1123,7 +1123,7 @@ ul, ol {
   transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 .consent-label:hover {
-  border-color: rgba(212, 160, 23, 0.4);
+  border-color: rgba(143, 209, 79, 0.4);
   background-color: rgba(255, 255, 255, 0.05);
 }
 .consent-checkbox {
