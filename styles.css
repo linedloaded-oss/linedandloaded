@@ -239,7 +239,7 @@ ul, ol {
   height: 160px;
   width: auto;
   display: block;
-  filter: contrast(1.2) brightness(1.05);
+  mix-blend-mode: screen;
 }
 
 /* Real logo image in footer */
@@ -247,7 +247,7 @@ ul, ol {
   height: 52px;
   width: auto;
   display: block;
-  filter: contrast(1.2) brightness(1.05);
+  mix-blend-mode: screen;
 }
 
 .logo-mark {
