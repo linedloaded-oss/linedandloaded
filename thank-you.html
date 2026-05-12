@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You! | Lined &amp; Loaded</title>
+  <meta name="description" content="Thank you for your quote request. We'll be in touch soon!" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    .thank-you-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+    
+    .thank-you-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      padding: 4rem 3rem;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+    
+    .checkmark {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 3;
+      stroke: #4bb543;
+      stroke-miterlimit: 10;
+      margin: 0 auto 2rem;
+      box-shadow: inset 0 0 0 #4bb543;
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+    
+    .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 3;
+      stroke-miterlimit: 10;
+      stroke: #4bb543;
+      fill: none;
+      animation: stroke .6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke .3s cubic-bezier(0.65, 0, 0.45, 1) .8s forwards;
+    }
+    
+    @keyframes stroke {
+      100% { stroke-dashoffset: 0; }
+    }
+    
+    @keyframes scale {
+      0%, 100% { transform: none; }
+      50% { transform: scale3d(1.1, 1.1, 1); }
+    }
+    
+    @keyframes fill {
+      100% { box-shadow: inset 0 0 0 30px #4bb543; }
+    }
+    
+    .thank-you-card h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+    
+    .thank-you-card p {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    
+    .thank-you-card .highlight {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    
+    .thank-you-card .contact-info {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    .thank-you-card .phone-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fbbf24;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      transition: color 0.3s;
+    }
+    
+    .thank-you-card .phone-link:hover {
+      color: #f59e0b;
+    }
+    
+    .home-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #fbbf24;
+      color: #1a1a1a;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s;
+      font-size: 1.1rem;
+    }
+    
+    .home-btn:hover {
+      background: #f59e0b;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
+    }
+    
+    @media (max-width: 640px) {
+      .thank-you-card {
+        padding: 3rem 2rem;
+      }
+      
+      .thank-you-card h1 {
+        font-size: 2rem;
+      }
+      
+      .thank-you-card p {
+        font-size: 1.1rem;
+      }
+      
+      .checkmark {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-page">
+    <div class="thank-you-card">
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+      </svg>
+      
+      <h1>Thank You!</h1>
+      <p>We've received your quote request and <span class="highlight">we'll reach out within a few hours.</span></p>
+      <p>One of our team members will contact you to discuss your project details and provide a free, no-obligation quote.</p>
+      
+      <div class="contact-info">
+        <p style="margin-bottom: 0.5rem;">Need to reach us right away?</p>
+        <a href="tel:+14699662580" class="phone-link">📞 (469) 966-2580</a>
+      </div>
+      
+      <a href="/" class="home-btn">← Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Google Analytics conversion tracking happens automatically on this page load -->
+
+</body>
+</html>

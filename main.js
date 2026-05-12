@@ -298,12 +298,8 @@
         throw new Error('Server returned ' + response.status);
       }
 
-      // SUCCESS: hide form, show success card
-      form.hidden = true;
-      successMsg.hidden = false;
-
-      // Scroll success message into view
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // SUCCESS: redirect to thank-you page for GA conversion tracking
+      window.location.href = '/thank-you.html';
 
     } catch (err) {
       // ERROR: show error banner
