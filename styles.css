@@ -289,6 +289,30 @@ ul, ol {
   color: var(--color-primary);
 }
 
+/* Desktop phone link in nav (hidden on mobile) */
+.nav-phone {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
+}
+
+.nav-phone:hover {
+  color: var(--color-primary);
+  background: rgba(143, 209, 79, 0.08);
+}
+
+.nav-phone-icon {
+  font-size: 0.95rem;
+}
+
 /* Desktop CTA — push it to the right */
 .nav-cta {
   margin-left: var(--spacing-sm);
@@ -1003,6 +1027,10 @@ ul, ol {
   }
 
   .nav-cta {
+    display: inline-flex;
+  }
+
+  .nav-phone {
     display: inline-flex;
   }
 
